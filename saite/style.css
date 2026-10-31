@@ -5,45 +5,6 @@
 }
 
 
-@media screen and (max-width: 768px) {
-
-* {
-box-sizing: border-box;
-}
-
-body {
-width: 100%;
-margin: 0;
-overflow-x: hidden;
-}
-
-.container {
-width: 100%;
-max-width: 100%;
-padding: 15px;
-}
-
-h1 {
-font-size: 28px;
-text-align: center;
-}
-
-.content {
-display: flex;
-flex-direction: column;
-width: 100%;
-}
-
-img {
-max-width: 100%;
-height: auto;
-}
-
-section {
-width: 100%;
-max-width: 100%;
-}
-}
 
 
 *{box-sizing:border-box}
@@ -92,3 +53,112 @@ textarea{min-height:120px;resize:vertical}
 
 /* МОБИЛЬНЫЕ СТИЛИ НАМЕРЕННО ОТСУТСТВУЮТ.
    Проект предназначен для практической по адаптивной верстке. */
+@media screen and (max-width: 768px) {
+
+body {
+width: 100%;
+overflow-x: hidden;
+}
+
+.container {
+width: 100%;
+max-width: 100%;
+padding: 0 20px;
+}
+
+/* Шапка сайта */
+.header-inner {
+height: auto;
+min-height: 80px;
+padding: 15px 20px;
+flex-direction: column;
+gap: 15px;
+}
+
+.main-nav ul {
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+}
+
+/* Главный экран */
+.hero {
+padding: 35px 0;
+}
+
+.hero-grid {
+grid-template-columns: 1fr;
+gap: 30px;
+}
+
+.hero h1 {
+font-size: 34px;
+text-align: left;
+}
+
+.hero p {
+font-size: 16px;
+}
+
+.hero-image {
+width: 100%;
+max-width: 100%;
+}
+
+.hero-actions {
+flex-wrap: wrap;
+}
+
+/* Карточки */
+.cards,
+.stats,
+.team-grid,
+.course-list {
+grid-template-columns: 1fr;
+}
+
+/* Обучение */
+.feature-row {
+flex-direction: column;
+}
+
+.feature {
+width: 100%;
+}
+
+/* Другие страницы */
+.course-layout,
+.about-layout,
+.contact-layout {
+grid-template-columns: 1fr;
+}
+
+.sidebar {
+position: static;
+}
+
+.form-row {
+flex-direction: column;
+gap: 0;
+}
+
+/* Заголовки */
+.section-title {
+font-size: 28px;
+}
+
+.page-hero h1 {
+font-size: 32px;
+}
+
+/* Подвал */
+.footer-grid {
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+}
