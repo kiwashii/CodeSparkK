@@ -4,6 +4,7 @@
   --primary-dark:#5b21b6;--accent:#22c55e;--line:#e5e7eb;--dark:#111827;
 }
 
+
 @media (max-width: 768px) {
 body {
 width: 100%;
